@@ -1,6 +1,6 @@
 using System;
 
-static long CalculateFactorial(int n)
+static long CalcularFatorial(int n)
 {
     if (n < 0)
     {
@@ -27,6 +27,6 @@ static long CalculateFactorial(int n)
 Console.Write("Enter a number to calculate the factorial: ");
 int number = int.Parse(Console.ReadLine());
 
-long result = CalculateFactorial(number);
+long result = CalcularFatorial(number);
 
 Console.WriteLine($"The factorial of {number} is {result}");
