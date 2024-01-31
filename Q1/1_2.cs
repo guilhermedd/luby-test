@@ -2,20 +2,24 @@ using System;
 
 static float? CalcularPremio(int value, string type, float? mult)
 {
-    if (mult.HasValue) {
-        if (mult < 0) {
+    if (mult.HasValue)
+    {
+        if (mult < 0)
+        {
             Console.WriteLine("Multiplier can't be a negative number.");
             return -1.0f;
         }
         return value * mult;
     }
 
-    if (value < 0) {
+    if (value < 0)
+    {
         Console.WriteLine("Prize can't be a negative number.");
         return -1.0f;
     }
 
-    switch(type) {
+    switch (type)
+    {
         case "basic":
             return value;
         case "vip":
@@ -41,10 +45,11 @@ string type = Console.ReadLine();
 
 Console.Write("Enter a multiplication value: ");
 string arg = Console.ReadLine();
-float? mult = (arg == "null")? null : int.Parse(arg);
+float? mult = (arg == "null") ? null : int.Parse(arg);
 
 float? result = CalcularPremio(number, type, mult);
 
-if (result != -1) {
+if (result != -1)
+{
     Console.WriteLine($"The total value is {result:0.00}");
-} 
+}

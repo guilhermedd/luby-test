@@ -4,7 +4,7 @@ static int[] ObterElementosFaltantes(string input1, string input2)
 {
     string[] numbers1 = input1.Split(',');
     string[] numbers2 = input2.Split(',');
-    
+
     if (numbers1 == numbers2)
     {
         return new int[] { };

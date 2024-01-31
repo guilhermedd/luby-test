@@ -5,7 +5,7 @@ static long CalcularVogais(string str)
     int count = 0;
 
     foreach (char c in str.ToLower())
-    {   
+    {
         if ("aeiou".Contains(c))
         {
             count++;
